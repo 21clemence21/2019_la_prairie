@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to my portfolio !</h1>
+        <p> Je m'appelle Clemence, j'ai 32 ans, je suis actuellement étudiante chez Simplon dans le but de devenir developpeuse web</p>
+        <a href="php.html">Ma page php</a>
+        <a href="sql.html">Ma page sql</a>
+    </header>
+
+    <menu>
+        <nav>
+            <ul>
+                <li><a href="index.html">Mon index</a></li>
+                <li><a href="php.html">Ma page php</a></li>
+                <li><a href="sql.html">Ma page sql</a></li>
+                <li><a href="contact.html"></a></li>
+            </ul>
+        </nav>
+
+    </menu>
+
+    <main>
+        <section>
+            <form method="post" action="traitement.php" >
+                <p>
+                    <label for="nom">Votre nom</label> : <input type="text" name="nom" id="nom" required/>
+                    <label for="prenom">Votre prenom</label> : <input type="text" name="prenom" id="prenom" required/>
+                    <label for="email">Votre email</label> : <input type="email" name="email" id="email"  required/>
+                    <label for="age">Votre age</label> : <input type="number" min="3" max="99" name="age" id="age" />
+                    <label for="telephone">Votre numero de tel</label> : <input type="tel" name="telephone" id="telephone" />
+
+                    <p> Votre sexe: <br>
+
+                        <input type="radio" name="sex" value="femme" id="femme" /> <label for="femme">femme</label><br />
+                        <input type="radio" name="sex" value="homme" id="homme" /> <label for="homme">15-25 ans</label><br />
+                        <input type="radio" name="sex" value="licorne" id="licorne" /> <label for="licorne">25-40 ans</label><br />
+    
+                    </p>
+
+                    
+                    <label for="couleur">Votre couleur préférée</label> : <input type="color" name="couleur" id="couleur" />
+                    <label for="date">Date du jour</label> : <input type="date" name="date" id="date" />
+                    <label for="technologie">Quelle technologie utilisez vous ?</label><br />
+                    <select name="technologie" id="technologie">
+                        <option value="php">php</option>
+                        <option value="html">html</option>
+                        <option value="css">css</option>
+                        <option value="javascript">javascript</option>
+                        <option value="sql">sql</option>
+                        <option value="ruby">ruby</option>
+                        <option value="autre">autre</option>
+                        
+                    </select>
+                    <label for="question">Avez vous des questions ?</label><br />
+                    <textarea name="question" id="question"></textarea>
+                </p>
+
+                <input type="submit" value="Envoyer" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>Depernet - Clemence - depernetclemence@gmail.com - 0695504975</p>
+        </address>
+    </footer>
+
+
+</body>
+</html>
